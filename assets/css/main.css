@@ -1,7 +1,6 @@
 #body {
   background-color: #C0C0C0
-  /*height: 100%;*/
-}
+  }
 
 /* HEADER */
 
@@ -24,55 +23,53 @@ h1 {
   font-size: 300%;
   float: left;
 }
-/* Nav below controls distance between it and h1 */
-nav.nav-header {
-  margin-left: 10%;
-   /*float: left;*/
-  /*margin: 3% auto auto 11%;*/
-}
 
-/*below, a tight box around nav buttons*/
+/*below, a tight BOX around nav buttons*/
 ul.ul-header {
   float:left;
     list-style-type: none;
-    /*margin: 0;*/
-    /*padding: 0;*/
     width: 30%;
-    margin-top: 0%;
-    margin:left: 50%;
+    margin-top: 3%;
+    margin:left: 60%;
     display: inline;
-    /*display: inline-block;*/
 }
 
-li.li-header {border: 1px outset gray; border-radius: 15%;
-  background-color: #F5F5F5;}
+/*BUTTON CONTROLS */
+li.li-header {
+  border: 1px outset gray; 
+  border-radius: 15%;
+  background-color: #FFFAF0;
+  border-radius: 15%;
+  padding:2%;}
 
+/*DISABLE ANCHOR*/
 a.a-header {
     display: block;
     text-decoration: none;
-   width: 110%; 
-  background-color: #FFFAF0;
-    border-radius: 15%;
- }
-/*lettering inside buttons*/
-h3 {font-size: 90%; margin: 0; color: black; padding: 5%; font-family: garamond; font-weight: 100;}
+}
+
+/*TEXT INSIDE BUTTONS*/
+h3 {
+  font-size: 90%; /*SIZE OF TEXT INSIDE BUTTON*/
+  color: black; 
+  font-family: garamond; 
+  font-weight: 100;
+}
 
 /*  MIDDLE SECTION ROW */
-
 section {
   overflow: auto;
   background-color: #B4E0B4;
   height: 95%;
 }
 
-
 aside {
   float: left;
   width: 20%;
   margin: 5% auto auto 7%;
   border-radius: 12%;
-background-color:   #FFFAF0;
-text-align: center;
+  background-color:   #FFFAF0;
+  text-align: center;
 }
 
 header.aside {
@@ -102,9 +99,6 @@ a {
   font-size: 1.75em;
 }
 
-
-
-
 /*  BOTTOM */
 
 footer {
@@ -116,7 +110,7 @@ footer {
 }
 h4 {text-align: center;}
 
-/* FIRST BREAKPOINT*/
+/* ______________________________________________________FIRST BREAKPOINT*/
 @media (max-width: 886px){
 
 h1 {
@@ -124,26 +118,28 @@ h1 {
   font-size: 275%;
 }
 
-ul.ul-header {
-    display: inline; /*was inline-block*/  
+ul.ul-header { 
     width: 70%;  
 }
 
 a.a-header {
     display: inline; /*was block*/
-    width: 100px;
      }
 
-section {background: yellow;}
-article.article {width: 90%;}
-aside {
-  width: 80%;
-    margin: 3% 8% 3% 11%;}
+article.article {
+  width: 90%;
 }
 
+aside {
+  width: 80%;
+    margin: 3% 8% 3% 11%;
+  }
+}
+/*----------------------------------------------------SMALLEST */
 @media (max-width:455px)
    
-   {img {
+   {img 
+    {
     float: none;
     width: 20%;
     margin: 0;
@@ -153,8 +149,8 @@ aside {
    h1 {
     float:none;
     margin:0 auto 0 auto;
-  width:60%;
-  font-size: 225%;
+    width:60%;
+    font-size: 225%;
 }
 
 ul.ul-header {
@@ -168,6 +164,5 @@ a.a-header {
     width: 100px;
      }
 h3 {font-size: 55%; padding: 3%;}
-
 
 }
