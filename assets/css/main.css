@@ -1,0 +1,173 @@
+#body {
+  background-color: #C0C0C0
+  /*height: 100%;*/
+}
+
+/* HEADER */
+
+header.header {
+  text-align: center;
+  background-color: #65E8C5;
+  overflow:auto;
+}
+
+img {
+  float: left;
+  width: 10%;
+  margin-left: 15%
+}
+
+h1 {
+  margin: 4% 0% auto 13%;
+  padding: 0px;
+  font-family: garamond;
+  font-size: 300%;
+  float: left;
+}
+/* Nav below controls distance between it and h1 */
+nav.nav-header {
+  margin-left: 10%;
+   /*float: left;*/
+  /*margin: 3% auto auto 11%;*/
+}
+
+/*below, a tight box around nav buttons*/
+ul.ul-header {
+  float:left;
+    list-style-type: none;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    width: 30%;
+    margin-top: 0%;
+    margin:left: 50%;
+    display: inline;
+    /*display: inline-block;*/
+}
+
+li.li-header {border: 1px outset gray; border-radius: 15%;
+  background-color: #F5F5F5;}
+
+a.a-header {
+    display: block;
+    text-decoration: none;
+   width: 110%; 
+  background-color: #FFFAF0;
+    border-radius: 15%;
+ }
+/*lettering inside buttons*/
+h3 {font-size: 90%; margin: 0; color: black; padding: 5%; font-family: garamond; font-weight: 100;}
+
+/*  MIDDLE SECTION ROW */
+
+section {
+  overflow: auto;
+  background-color: #B4E0B4;
+  height: 95%;
+}
+
+
+aside {
+  float: left;
+  width: 20%;
+  margin: 5% auto auto 7%;
+  border-radius: 12%;
+background-color:   #FFFAF0;
+text-align: center;
+}
+
+header.aside {
+  text-align: center
+}
+
+hr {
+  border-color: inherit;
+  width: 100%;
+}
+
+nav.aside {
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 4px;}
+
+a { 
+  color: black;
+  font-size: 1.75em;
+}
+
+
+
+
+/*  BOTTOM */
+
+footer {
+  background-color: #65E8C5;
+  text-align: center;
+  color: black;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+h4 {text-align: center;}
+
+/* FIRST BREAKPOINT*/
+@media (max-width: 886px){
+
+h1 {
+  margin-top: 0%;
+  font-size: 275%;
+}
+
+ul.ul-header {
+    display: inline; /*was inline-block*/  
+    width: 70%;  
+}
+
+a.a-header {
+    display: inline; /*was block*/
+    width: 100px;
+     }
+
+section {background: yellow;}
+article.article {width: 90%;}
+aside {
+  width: 80%;
+    margin: 3% 8% 3% 11%;}
+}
+
+@media (max-width:455px)
+   
+   {img {
+    float: none;
+    width: 20%;
+    margin: 0;
+    text-align:center;
+}
+
+   h1 {
+    float:none;
+    margin:0 auto 0 auto;
+  width:60%;
+  font-size: 225%;
+}
+
+ul.ul-header {
+    /*display: inline; was inline-block  */
+    width: 80%;  
+    margin: 0 auto 0 auto;
+}
+
+a.a-header {
+    display: inline; /*was block*/
+    width: 100px;
+     }
+h3 {font-size: 55%; padding: 3%;}
+
+
+}
