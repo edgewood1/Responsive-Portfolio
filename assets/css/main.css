@@ -1,5 +1,7 @@
 #body {
   background-color: #C0C0C0
+  /*min-height: 100%;*/
+  /*position: relative;*/
   }
 
 /* HEADER */
@@ -66,7 +68,7 @@ section {
 aside {
   float: left;
   width: 20%;
-  margin: 5% auto auto 7%;
+  margin: 6% auto auto 7%;
   border-radius: 12%;
   background-color:   #FFFAF0;
   text-align: center;
@@ -103,43 +105,57 @@ a {
 
 footer {
   background-color: #65E8C5;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  width: 100%;
   text-align: center;
   color: black;
-  padding-top: 1%;
-  padding-bottom: 3%;
+  /*padding-top: 3%;*/
+  /*padding-bottom: 3%;*/
 }
 h4 {text-align: center;}
 
-/* ______________________________________________________FIRST BREAKPOINT*/
+/*xxxxxxxxx bp1 - header / article / aside*/
+
 @media (max-width: 886px){
 
+/*header */
+
+img {
+  clear:left;
+  width: 20%;
+  margin: 0 auto 0 30%;
+  /*text-align: center;*/
+
+}
 h1 {
-  margin-top: 0%;
+  /*margin-top: 0%;*/
   font-size: 275%;
+  clear: left;
+  margin: 0 auto 0 30%;
 }
 
 ul.ul-header { 
     width: 70%;  
+    clear: left;
+    margin: 0 auto 0 10%;
 }
 
 a.a-header {
+  clear: left;
     display: inline; /*was block*/
      }
 
-article.article {
-  width: 90%;
+footer {
+ padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-aside {
-  width: 80%;
-    margin: 3% 8% 3% 11%;
-  }
 }
-/*----------------------------------------------------SMALLEST */
-@media (max-width:455px)
-   
-   {img 
-    {
+/*--------------------------------------------breakpoint 2: change header; */
+@media (max-width:455px){
+  
+  img {
     float: none;
     width: 20%;
     margin: 0;
@@ -155,14 +171,18 @@ aside {
 
 ul.ul-header {
     /*display: inline; was inline-block  */
-    width: 80%;  
-    margin: 0 auto 0 auto;
+    /*width: 100%;  */
+    clear: left;
+    margin: 0 auto 0 15%;
 }
 
 a.a-header {
     display: inline; /*was block*/
     width: 100px;
      }
-h3 {font-size: 55%; padding: 3%;}
+
+h3 {
+  font-size: 55%; 
+  padding: 3%;}
 
 }
